@@ -14,6 +14,8 @@ class Calculator:
 
     def divide(self, x: int, y: int) -> float:
         """ Divide x attribute on y """
+        if y == 0:
+            raise ZeroDivisionError('division by zero')
         return x / y
 
     def multiply(self, x: int, y: int) -> int:
